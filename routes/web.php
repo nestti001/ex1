@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/showdrtail/{name}/{age}/{mes}', function ($name,$age,$mes){
+    return ("สวัสดี $name คุณมีอายุ$age และคุณพูกว่า$mes");
+});
+
+Route::get("/บวกเลข/{num1}/{num2}", function ($num1 , $num2){
+    return $num1 + $num2;
+});
